@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="detailsViewModel"
+            type="com.example.myapplication.ui.details.DetailsViewModel" />
+
+    </data>
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".ui.details.DetailsFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/imageView_fragmentDetails_cityImage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/dimen_all_margin8dp"
+                android:layout_marginEnd="@dimen/dimen_all_margin8dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_fragmentDetails_cityName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_all_margin8dp"
+                android:layout_marginEnd="@dimen/dimen_all_margin8dp"
+                android:background="@color/white"
+                android:padding="@dimen/dimen_all_padding20"
+                android:text="@{detailsViewModel.mCityName}"
+                android:textSize="@dimen/dimen_all_textSize14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_fragmentDetails_cityImage" />
+
+            <TextView
+                android:id="@+id/textView_fragmentDetails_cityDescription"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/dimen_all_margin8dp"
+                android:layout_marginEnd="@dimen/dimen_all_margin8dp"
+                android:background="@color/white"
+                android:paddingStart="@dimen/dimen_all_padding20"
+                android:paddingEnd="@dimen/dimen_all_padding20"
+                android:text="@{detailsViewModel.mCityDescription}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_fragmentDetails_cityName" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

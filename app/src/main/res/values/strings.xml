@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="wrong_answer_from_server">پاسخ اشتباه از سرور</string>
+    <string name="no_response">پاسخی دریافت نشد</string>
+    <string name="empty_error">پاسخ خالی از سرور</string>
+    <string name="http_error_code">خطای %d</string>
+    <string name="error_connecting_to_server">خطا در اتصال به سرور</string>
+    <string name="error_check_Internet_connection">خطا، اتصال اینترنت را چک کنید</string>
+    <string name="authorization_error">خطا در احراز هویت</string>
+</resources>

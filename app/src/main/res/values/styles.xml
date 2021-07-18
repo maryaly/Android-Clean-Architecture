@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--normalProgressBar -->
+    <style name="normalProgressBar">
+        <item name="android:layout_width">@dimen/dimen_height_size22dp</item>
+        <item name="android:layout_height">@dimen/dimen_width_size20dp</item>
+        <item name="android:indeterminateDrawable">@drawable/drawable_gradient__progress_bar</item>
+    </style>
+</resources>

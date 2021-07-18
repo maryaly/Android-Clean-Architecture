@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dimen_all_margin10dp"
+    android:layout_marginEnd="@dimen/dimen_all_margin10dp"
+    android:layout_marginBottom="@dimen/dimen_all_margin10dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/dimen_corner_size10dp"
+    app:cardElevation="@dimen/dimen_all_margin2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView_itemCity"
+            android:layout_width="@dimen/dimen_width_size0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView_itemCity_cityName"
+            app:layout_constraintHorizontal_weight="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_itemCity_cityName"
+            android:layout_width="@dimen/dimen_width_size0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dimen_all_margin10dp"
+            android:padding="@dimen/dimen_all_padding10dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="0.75"
+            app:layout_constraintStart_toEndOf="@+id/imageView_itemCity"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_itemCity_cityDescription"
+            android:layout_width="@dimen/dimen_width_size0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_all_margin10dp"
+            android:lines="2"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:paddingStart="@dimen/dimen_all_padding10dp"
+            android:paddingEnd="@dimen/dimen_all_padding10dp"
+            android:paddingBottom="@dimen/dimen_all_padding10dp"
+            android:textSize="@dimen/dimen_all_textSize12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="0.8"
+            app:layout_constraintStart_toEndOf="@+id/imageView_itemCity"
+            app:layout_constraintTop_toBottomOf="@id/textView_itemCity_cityName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
